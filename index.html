@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitație la balet</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5FFFA;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+        
+        h1 {
+            color: #FF69B4;
+        }
+
+        input, button {
+            font-size: 1.2rem;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #FFB6C1;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #FFB6C1;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF69B4;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #FF69B4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            input, button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdu cuvânt cheie</h1>
+    <input type="text" id="keywordInput" placeholder="Introdu cuvânt cheie...">
+    <button onclick="checkKeyword()">Verifică</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
